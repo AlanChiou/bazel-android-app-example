@@ -26,6 +26,8 @@ android_library(
   srcs = glob(["*.java"]),
   deps = [
     "//src/main:app_deps",
+    "//src/main/java/com/example/android/app/model",
+    "//src/main/java/com/example/android/app/server",
     ":res"
   ]
 )

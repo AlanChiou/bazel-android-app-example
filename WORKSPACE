@@ -34,9 +34,18 @@ http_archive(
 
 load("@rules_jvm_external//:defs.bzl", "maven_install")
 
+lifecycle_version = "2.3.1"
+retrofit_version = "2.9.0"
 maven_install(
   artifacts = [
       "androidx.appcompat:appcompat:1.2.0",
+      "androidx.annotation:annotation:1.1.0",
+      "androidx.lifecycle:lifecycle-viewmodel-ktx:%s" % lifecycle_version,
+      "androidx.lifecycle:lifecycle-livedata-ktx:%s" % lifecycle_version,
+      "androidx.lifecycle:lifecycle-common-java8:%s" % lifecycle_version,
+      "com.google.code.gson:gson:2.8.6",
+      "com.squareup.retrofit2:retrofit:%s" % retrofit_version,
+      "com.squareup.retrofit2:converter-gson:%s" % retrofit_version,
   ],
   repositories = [
     "https://maven.google.com", # google()
