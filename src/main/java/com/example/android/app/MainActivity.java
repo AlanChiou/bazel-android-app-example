@@ -1,11 +1,12 @@
 package com.example.android.app;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public final class MainActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public final class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

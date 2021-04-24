@@ -3,10 +3,10 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="goToKotlin"
-        android:text="Java Activity"/>
+        android:text="Java Activity" />
 </FrameLayout>
