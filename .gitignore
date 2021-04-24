@@ -81,3 +81,11 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+# Bazel Project
+.aswb/
+bazel-bin
+bazel-out
+bazel-testlogs
+bazel-bazel-android-app-example
+
